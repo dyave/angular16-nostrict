@@ -12,6 +12,7 @@ export class HomeComponent {
   canClick = true;
   count = 0;
   message = "hey - ";
+  forCount = Array(5).fill(5).map((x,i)=>i); // [0,1,2,3,4]
 
   sayMessage() {
     this.count++;
