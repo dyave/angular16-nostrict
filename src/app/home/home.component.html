@@ -18,3 +18,11 @@
         Trigger alert message
     </button>
 </div>
+
+<div *ngIf="canEdit; else tmpTemplate">
+    <p>If ngIf is true, this is shown.</p>
+</div>
+
+<ng-template #tmpTemplate>
+    <p>If ngIf is false, this is shown.</p>
+</ng-template>

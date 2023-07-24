@@ -11,11 +11,14 @@ export class HomeComponent {
   className = "my-class";
   canClick = true;
   count = 0;
-  message = "hey - ";
+  message = "hey: ";
   forCount = Array(5).fill(5).map((x,i)=>i); // [0,1,2,3,4]
+  canEdit = true;
+
 
   sayMessage() {
     this.count++;
+    this.canEdit = !this.canEdit;
     alert(this.message + this.count);
   }
 }
